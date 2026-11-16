@@ -15,7 +15,6 @@ app.get('/api/status', (req, res) => {
 
 // Sample POST endpoint: receive and echo back JSON data
 app.post('/api/echo', (req, res) => {
-  console.log("---Echo endpoint----")
   console.log(Object.values(req.body))
   res.status(201).json({
     message: 'Data received',
